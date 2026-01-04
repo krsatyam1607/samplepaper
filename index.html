@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Sem Sample Paper</title>
+    <style>
+        :root {
+            /* Dark Theme Color Palette */
+            --bg-body: #0f172a;       /* Very dark slate */
+            --bg-card: #1e293b;       /* Lighter dark slate */
+            --text-main: #f1f5f9;     /* Off-white */
+            --text-muted: #94a3b8;    /* Grey text */
+            --accent-color: #38bdf8;  /* Light Blue */
+            --btn-bg: #334155;        /* Button background */
+            --btn-hover: #0ea5e9;     /* Button hover color */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding-bottom: 50px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .subject-header {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 15px;
+        }
+
+        .subject-code {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--accent-color);
+        }
+
+        .subject-name {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .paper-list {
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .paper-item {
+            margin-bottom: 15px;
+        }
+
+        /* The Download Button Styling */
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--btn-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .download-btn:hover {
+            background-color: var(--btn-hover);
+            color: white;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); /* Glow effect */
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        .icon {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sample Paper Archives</h1>
+        <p>Download Sample paper based on PYQ</p>
+    </header>
+
+    <div class="container">
+
+        <!-- ST -->
+        <div class="card">
+            <div class="subject-header">
+                <div class="subject-code">ST</div>
+                <div class="subject-name">Software Testing</div>
+            </div>
+            <ul class="paper-list">
+                <li class="paper-item"><a href="downloads/st_paper1.pdf" class="download-btn" download>Paper 2021 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/st_paper2.pdf" class="download-btn" download>Paper 2022 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/st_paper3.pdf" class="download-btn" download>Paper 2023 <span class="icon">⬇</span></a></li>
+            </ul>
+        </div>
+
+        <!-- JAVA -->
+        <div class="card">
+            <div class="subject-header">
+                <div class="subject-code">JAVA</div>
+                <div class="subject-name">Java Programming</div>
+            </div>
+            <ul class="paper-list">
+                <li class="paper-item"><a href="downloads/java_paper1.pdf" class="download-btn" download>Paper 2021 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/java_paper2.pdf" class="download-btn" download>Paper 2022 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/java_paper3.pdf" class="download-btn" download>Paper 2023 <span class="icon">⬇</span></a></li>
+            </ul>
+        </div>
+
+        <!-- ADA -->
+        <div class="card">
+            <div class="subject-header">
+                <div class="subject-code">ADA</div>
+                <div class="subject-name">Analysis of Algorithms</div>
+            </div>
+            <ul class="paper-list">
+                <li class="paper-item"><a href="downloads/ada_paper1.pdf" class="download-btn" download>Paper 2021 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/ada_paper2.pdf" class="download-btn" download>Paper 2022 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/ada_paper3.pdf" class="download-btn" download>Paper 2023 <span class="icon">⬇</span></a></li>
+            </ul>
+        </div>
+
+        <!-- MPMC -->
+        <div class="card">
+            <div class="subject-header">
+                <div class="subject-code">MPMC</div>
+                <div class="subject-name">Microprocessor & Controller</div>
+            </div>
+            <ul class="paper-list">
+                <li class="paper-item"><a href="downloads/mpmc_paper1.pdf" class="download-btn" download>Paper 2021 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/mpmc_paper2.pdf" class="download-btn" download>Paper 2022 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/mpmc_paper3.pdf" class="download-btn" download>Paper 2023 <span class="icon">⬇</span></a></li>
+            </ul>
+        </div>
+
+        <!-- ADS -->
+        <div class="card">
+            <div class="subject-header">
+                <div class="subject-code">ADS</div>
+                <div class="subject-name">Adv. Data Structures</div>
+            </div>
+            <ul class="paper-list">
+                <li class="paper-item"><a href="downloads/ads_paper1.pdf" class="download-btn" download>Paper 2021 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/ads_paper2.pdf" class="download-btn" download>Paper 2022 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/ads_paper3.pdf" class="download-btn" download>Paper 2023 <span class="icon">⬇</span></a></li>
+            </ul>
+        </div>
+
+        <!-- OS -->
+        <div class="card">
+            <div class="subject-header">
+                <div class="subject-code">OS</div>
+                <div class="subject-name">Operating Systems</div>
+            </div>
+            <ul class="paper-list">
+                <li class="paper-item"><a href="downloads/os_paper1.pdf" class="download-btn" download>Paper 2021 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/os_paper2.pdf" class="download-btn" download>Paper 2022 <span class="icon">⬇</span></a></li>
+                <li class="paper-item"><a href="downloads/os_paper3.pdf" class="download-btn" download>Paper 2023 <span class="icon">⬇</span></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Exam Sample Paper </p>
+    </footer>
+
+</body>
+</html>
